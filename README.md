@@ -7,14 +7,14 @@
 ### 🖥️ **About Me**  
 I'm a Computer Science student at the University of New Brunswick, with a passion for clean, scalable code and impactful projects. I specialize in frontend development and cybersecurity, with experience working on critical infrastructure apps for organizations like Twilio and the Canadian Institute for Cybersecurity (CIC).  
 
-- **Currently:** Cybersecurity Frontend Developer Intern @ CIC  
-- **Previously:** Software Developer @ Twilio USA  
+- **Currently:** Cybersecurity Frontend Developer Intern @ CIC, Canada
+- **Previously:** Contributor, Twilio Voices Program @ Twilio USA, Remote
 
 ---
 
 ### 🚀 **My Projects**  
 #### [Vidova.ai](https://vidova.ai)  
-A dynamic platform leveraging AWS S3 for scalable storage and license key validation, with seamless Stripe integration for payments.  
+A dynamic Windows platform leveraging AWS S3 for scalable storage and license key validation, with seamless Stripe integration for payments.  
 
 #### [SquareSense.ai](https://github.com/eludadev/squaresense-ai)  
 🏆 First Place @ Google + Square AI Hackathon.  
@@ -33,15 +33,10 @@ A dynamic platform leveraging AWS S3 for scalable storage and license key valida
 
 ---
 
-### 🏅 **Awards**  
-- **Google + Square AI Hackathon:** First Place  
-- **1Password Hackathon:** Passage SDK Winner  
-
----
-
 ### 📫 **Connect with Me**  
 - **Website:** [youneslaaroussi.ca](https://youneslaaroussi.ca)  
-- **GitHub:** [github.com/eludadev](https://github.com/eludadev)  
-- **LinkedIn:** [linkedin.com/in/youneslaaroussi](https://linkedin.com/in/youneslaaroussi)  
+- **Email:** [younes.laaroussi@unb.ca](mailto:younes.laaroussi@unb.ca)  
+- **GitHub:** [github.com/youneslaaroussi](https://github.com/youneslaaroussi)  
+- **LinkedIn:** [linkedin.com/in/younes-laaroussi](https://linkedin.com/in/younes-laaroussi)  
 
 ---
