@@ -1,40 +1,42 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+# 👋 Hi, I'm Younes Laaroussi  
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+### 🌐 Full Stack Web, Mobile, and Cloud Developer  
 
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+---
 
-## Features
+### 🖥️ **About Me**  
+I'm a Computer Science student at the University of New Brunswick, with a passion for clean, scalable code and impactful projects. I specialize in frontend development and cybersecurity, with experience working on critical infrastructure apps for organizations like Twilio and the Canadian Institute for Cybersecurity (CIC).  
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
-- Responsive and accessible design.
-- Easy to use
-- [Motion-Primitives](https://motion-primitives.com) for animated components.
+- **Currently:** Cybersecurity Frontend Developer Intern @ CIC, Canada
+- **Previously:** Contributor, Twilio Voices Program @ Twilio USA, Remote
 
-## Getting Started
+---
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
+### 🚀 **My Projects**  
+#### [Vidova.ai](https://vidova.ai)  
+A dynamic Windows platform leveraging AWS S3 for scalable storage and license key validation, with seamless Stripe integration for payments.  
 
-```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
-npm install
-npm run dev
-```
+#### [SquareSense.ai](https://github.com/eludadev/squaresense-ai)  
+🏆 First Place @ Google + Square AI Hackathon.  
+- Created a data analysis tool using React.js, Google Vertex AI, and Square APIs.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### [Passage PHP SDK](https://github.com/eludadev/Passage)  
+🏆 Passage SDK Winner @ 1Password Hackathon.  
+- Built PHP/Laravel bindings for 1Password’s Passage SDK.  
 
-## Contributing
+---
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
+### 🛠️ **Skills**  
+- **Languages:** Python, JavaScript, C++, Java  
+- **Frameworks/Tools:** React.js, Node.js, Docker, HTML5, CSS3, AWS, Google Cloud  
+- **Practices:** Clean Code, Agile Development, Unit Testing, Debugging  
 
-## Deployment
+---
 
-You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
+### 📫 **Connect with Me**  
+- **Website:** [youneslaaroussi.ca](https://youneslaaroussi.ca)  
+- **Email:** [younes.laaroussi@unb.ca](mailto:hello@youneslaaroussi.ca)  
+- **GitHub:** [github.com/youneslaaroussi](https://github.com/youneslaaroussi)  
+- **LinkedIn:** [linkedin.com/in/younes-laaroussi](https://linkedin.com/in/younes-laaroussi)  
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fibelick%2Fnim&env=NEXT_PUBLIC_SITE_URL&project-name=nim&repository-name=nim&redirect-url=https%3A%2F%2Ftwitter.com%2Fibelick&demo-title=Nim&demo-description=Nim%20is%20a%20free%20and%20open-source%20minimal%20personal%20website%20template%20built%20with%20Next.js%2015%2C%20React%2019%2C%20and%20Motion-Primitives.&demo-url=https%3A%2F%2Fnim.vercel.app&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2Fibelick%2Fnim%2Frefs%2Fheads%2Fmain%2F.github%2Fassets%2Freadme.png&teamSlug=ibelick)
-
-## About
-
-Nim is designed to make personal branding effortless and beautiful. If you enjoy it, consider sharing it and exploring [Motion-Primitives Pro](https://pro.motion-primitives.com/).
+---

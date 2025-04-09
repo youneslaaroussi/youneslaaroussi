@@ -12,9 +12,29 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Nim - Personal website template',
+  title: 'Younes Laaroussi',
   description:
-    'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+    'Computer Science student passionate about front-end development and cybersecurity. I build user-friendly web interfaces using React.js, Python and JavaScript.',
+  openGraph: {
+    title: 'Younes Laaroussi',
+    description: 'Computer Science student passionate about front-end development and cybersecurity. I build user-friendly web interfaces using React.js, Python and JavaScript.',
+    images: [
+      {
+        url: '/cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Younes Laaroussi',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Younes Laaroussi',
+    description: 'Computer Science student passionate about front-end development and cybersecurity. I build user-friendly web interfaces using React.js, Python and JavaScript.',
+    images: ['/cover.png'],
+  },
 }
 
 const geist = Geist({

@@ -15,6 +15,16 @@ type WorkExperience = {
   id: string
 }
 
+type Education = {
+  school: string
+  degree: string
+  field: string
+  start: string
+  end: string
+  link: string
+  id: string
+}
+
 type BlogPost = {
   title: string
   description: string
@@ -29,91 +39,105 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Vidova AI - Your Personal Filmmaker',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+      'Desktop software application for video editing and AI-powered screen video recording.',
+    link: 'https://vidova.ai/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
-    id: 'project1',
+      'https://res.cloudinary.com/vidovaai/video/upload/v1717643404/GPURender_jhqyvw.mp4',
+    id: 'vidova',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'LetsToon - AI Avatar Creator',
+    description: 'Native mobile app for creating and sharing AI avatars. Available on iOS and Android.',
+    link: 'https://imagen.site.vidova.ai/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
-    id: 'project2',
+      'https://res.cloudinary.com/vidovaai/video/upload/v1744209724/letstoon-1_dyldnd.mp4',
+    id: 'letsToon',
+  },
+]
+
+export const EDUCATION: Education[] = [
+  {
+    school: 'University of New Brunswick',
+    degree: 'Bachelor of Computer Science',
+    field: 'Computer Science',
+    start: '2024',
+    end: 'Present',
+    link: 'https://www.unb.ca',
+    id: 'unb',
+  },
+  {
+    school: 'CPGE Moulay Youssef',
+    degree: 'Preparatory Classes (Top of Class)',
+    field: 'MPSI',
+    start: '2023',
+    end: '2024',
+    link: 'https://www.cpge.ma/liste-des-cpge-publiques-au-maroc/lycee-moulay-youssef-cpge/',
+    id: 'cpge',
+  },
+  {
+    school: 'Lycée Elbilia Skolar',
+    degree: 'Baccalauréat',
+    field: 'Les sciences mathématiques',
+    start: '2021',
+    end: '2023',
+    link: 'https://www.elbilia-skolar.ma/',
+    id: 'lycee',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Canadian Institute for Cybersecurity',
+    title: 'Co-op Software Engineer',
+    start: 'January 2025',
     end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work1',
+    link: 'https://www.unb.ca/cic/',
+    id: 'cic',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
+    company: 'Twilio Documentation - Contributor',
+    title: 'Freelance',
     start: '2022',
     end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
+    link: 'https://www.twilio.com/docs',
+    id: 'twilio',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
+    title: 'Winning First Place at the 2023 Google and Square AI Hackathon',
+    description: 'Sharing my experience and learnings from the hackathon, and the project I built.',
+    link: '/blog/winning-first-place-at-the-2023-google-and-square-ai-hackathon',
+    uid: 'google-square-hackathon',
   },
   {
-    title: 'Why I left my job to start my own company',
+    title: 'Winning multiple hackathons in one year: 1Password, Outerbase (Cloudflare), and Google and Square',
     description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
+      'How I won multiple hackathons in one year, and what I learned from each of them.',
+    link: '/blog/winning-multiple-hackathons-in-one-year',
+    uid: 'multiple-hackathons',
   },
   {
-    title: 'What I learned from my first year of freelancing',
+    title: 'Freelancing at Cyclic, Twilio, and DigitalOcean',
     description:
       'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
+    link: '/blog/freelancing-at-cyclic-twilio-and-digitalocean',
+    uid: 'freelancing',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/youneslaaroussi',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.linkedin.com/in/younes-laaroussi',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'hello@youneslaaroussi.ca'
