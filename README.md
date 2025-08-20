@@ -35,7 +35,7 @@ A dynamic Windows platform leveraging AWS S3 for scalable storage and license ke
 
 ### 📫 **Connect with Me**  
 - **Website:** [youneslaaroussi.ca](https://youneslaaroussi.ca)  
-- **Email:** [younes.laaroussi@unb.ca](mailto:hello@youneslaaroussi.ca)  
+- **Email:** [hello@youneslaaroussi.ca](mailto:hello@youneslaaroussi.ca)  
 - **GitHub:** [github.com/youneslaaroussi](https://github.com/youneslaaroussi)  
 - **LinkedIn:** [linkedin.com/in/younes-laaroussi](https://linkedin.com/in/younes-laaroussi)  
 
