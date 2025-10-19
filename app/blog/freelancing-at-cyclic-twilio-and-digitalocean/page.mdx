@@ -1,1 +1,103 @@
-WIP
+# Freelancing at Cyclic, Twilio, and DigitalOcean
+
+My first year of freelancing was nothing like I expected. I thought it would be about writing code, getting paid, and moving on to the next gig. Instead, it became a masterclass in communication, technical writing, and understanding what developers actually need.
+
+## How It Started
+
+I didn't set out to become a freelancer. I was just a developer who enjoyed writing about code. I'd publish articles explaining how I solved problems, share demos of interesting APIs, and contribute to open source when I could.
+
+That habit of documenting my work turned out to be valuable. Companies noticed. They weren't just looking for developers who could code; they wanted developers who could explain complex topics clearly and build examples that other developers would want to use.
+
+## Cyclic: Writing Documentation That Developers Would Actually Read
+
+Cyclic was my first significant freelance client. They were building a serverless computing platform and needed someone to write their documentation. The challenge wasn't just explaining what the platform did; it was making developers excited to try it.
+
+I approached documentation the same way I approach code: with empathy for the user. Every tutorial had to answer "Why would I use this?" before diving into "How do I use this?" Every code example needed to be something developers would actually want to build, not toy examples.
+
+Working with Cyclic taught me that good documentation is as important as good code. A powerful platform with poor docs is useless. A simple platform with great docs can change how people build software.
+
+The platform was eventually sold and now operates under a new name, but the experience shaped how I think about developer experience. If developers can't understand your tool in five minutes, you've already lost them.
+
+## Twilio: Building Demos That Tell Stories
+
+My work with [Twilio](https://www.twilio.com/) was different. Through their [Voices Program](https://www.twilio.com/en-us/blog/authors/author.elaaroussi), I contributed articles and sample applications showcasing their APIs. This wasn't just about documentation; it was about inspiring developers to build things they hadn't imagined.
+
+I built projects like:
+- [Voice-based pizza ordering service](https://www.twilio.com/en-us/blog/developers/community/building-voice-based-dominos-pizza-ordering-system-twilio-openai-google-maps) using Twilio, OpenAI, and Google Maps
+- [Call scheduling service](https://www.twilio.com/en-us/blog/developers/community/building-call-scheduling-service-twilio-nestjs) with NestJS
+- [WhatsApp image editor](https://www.twilio.com/en-us/blog/building-whatsapp-image-editor-twilio-replicate-ngrok) using Replicate
+- [Survey response collection](https://www.twilio.com/en-us/blog/developers/community/collect-survey-responses-twilio-programmable-voice-airtable) with Airtable and OpenAI
+
+Each project had to be practical enough to adapt for real use cases but interesting enough to capture attention.
+
+One of my favorite projects was [adding Christmas face masks to Twilio Video](https://www.twilio.com/en-us/blog/christmas-face-masks-twilio-video-tensorflow-webgl) using TensorFlow and WebGL. This combined Twilio's video APIs with machine learning in the browser. It was technically challenging and genuinely fun. That combination of difficulty and delight is what I aimed for in every demo.
+
+```javascript
+// Example: Integrating Twilio with AI
+const twilioClient = require('twilio')(accountSid, authToken);
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+app.post('/voice', async (req, res) => {
+  const twiml = new twilio.twiml.VoiceResponse();
+  // Process voice input with AI...
+});
+```
+
+The goal was always to show how different APIs could work together to solve real problems. Developers don't just need to know how one API works; they need to see how it fits into their stack.
+
+Working in Agile sprints with GitHub-based CI/CD pipelines taught me how to deliver consistently. Code reviews from the Twilio team pushed me to write cleaner, more maintainable code. The feedback loop made me a better developer.
+
+What I learned from Twilio was that sample code is marketing. Every demo you publish either excites developers about your platform or makes them look elsewhere. The quality bar has to be high because you're competing for attention in a noisy ecosystem.
+
+## CSS-Tricks and DigitalOcean: Writing for a Broader Audience
+
+When [DigitalOcean](https://www.digitalocean.com/) acquired [CSS-Tricks](https://css-tricks.com/), I had the opportunity to write for a massive developer audience. This was different from vendor documentation or API demos. These were educational articles that had to stand on their own merit.
+
+I wrote articles including:
+- [Building Interactive Figma Widgets](https://css-tricks.com/building-interactive-figma-widgets/) - explaining how developers could extend Figma with custom functionality
+- [Technical Writing for Developers](https://css-tricks.com/technical-writing-for-developers/) - sharing what I'd learned about communicating complex ideas clearly
+
+
+The audience at CSS-Tricks was diverse. Some readers were senior engineers, others were just starting out. Every article needed to be accessible without being condescending, detailed without being overwhelming.
+
+Writing for publication taught me the importance of editing. My first drafts were always too technical, too focused on implementation details. Good technical writing serves the reader's goals, not the writer's ego.
+
+## The Unexpected Benefits
+
+Freelancing taught me skills I didn't know I needed. Client communication became as important as coding ability. Understanding deadlines, managing expectations, and delivering consistently mattered as much as technical chops.
+
+I learned to write for different audiences. Documentation readers want clarity and completeness. Demo consumers want inspiration and practical patterns. Tutorial followers want step-by-step guidance that actually works.
+
+The variety kept me learning. One week I was deep in serverless deployment patterns, the next I was implementing WebGL shaders for video effects, then I was architecting database integrations with AI systems. Freelancing forced me out of my comfort zone repeatedly.
+
+## What I Learned About Developer Relations
+
+These three clients taught me what developer relations really means. It's not just about writing docs or building demos. It's about understanding developer pain points and creating resources that genuinely help.
+
+Good DevRel work makes developers successful. When someone reads your tutorial and successfully builds their project, that's the win. When your documentation answers their question at 11 PM before a deadline, you've done your job.
+
+I learned that developers trust authenticity. They can tell when you're actually building with the tools versus just marketing them. Every demo I built, I used myself. Every tutorial I wrote, I followed myself. That authenticity came through in the work.
+
+## The Technical Writing Muscle
+
+One unexpected outcome was becoming a better technical writer. I developed a process: start with why, explain the what, show the how, then explore the edge cases. Every piece of technical content I create follows this pattern now.
+
+I learned to anticipate questions. While writing, I'd constantly ask "What would confuse someone here?" and address it proactively. Screenshots, code comments, and links to additional resources all served this goal.
+
+The feedback loop was invaluable. Seeing which articles got shared, which demos got forked, which tutorials got comments about missing steps – all of it made me better at communicating through writing.
+
+## Looking Back
+
+That first year of freelancing wasn't just about the money or the portfolio pieces. It was about discovering that I enjoyed teaching as much as building. Taking complex technical topics and making them accessible felt as satisfying as shipping features.
+
+The relationships I built with these companies opened more doors than I expected. The Twilio community connected me with other developers working on interesting problems. The CSS-Tricks audience gave me feedback that shaped my thinking. The Cyclic team taught me about infrastructure in ways I wouldn't have learned otherwise.
+
+## What's Next
+
+I'm not freelancing in the same way anymore. The work I did with these companies helped me transition into more focused roles where I can go deeper on specific problems. But the skills I developed – clear communication, empathy for users, ability to learn new tools quickly – remain central to everything I do.
+
+If you're considering freelance developer relations work, my advice is simple: start creating content now. Write about what you're learning. Build demos of tools you find interesting. Help other developers solve problems publicly.
+
+The work will find you if you're consistent and genuine. Companies are always looking for developers who can both build and communicate. That combination is rarer than you'd think.
+
+Looking back, that year taught me that the best way to master a technology is to teach it to others. Every article I wrote, every demo I built, every piece of documentation I created deepened my own understanding. Teaching and learning aren't separate activities; they're the same thing from different angles.

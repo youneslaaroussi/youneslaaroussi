@@ -1,1 +1,84 @@
-WIP
+# Winning Multiple Hackathons in One Year
+
+Looking back at the past year, I can hardly believe it myself. Three major hackathon wins: [1Password](https://hashnode.com/hackathons/1password), [Outerbase](https://hashnode.com/hackathons/outerbase), and [Google with Square](https://square-google-ai.devpost.com/). Each one taught me something different, and together they've shaped how I approach building software.
+
+![Hackathon Trophies](https://images.ctfassets.net/1wryd5vd9xez/79Ul4Q0JRXcnPfi5YeWDPt/e4461dfeb7f71424203ba481765070c9/SquarexGoogle_AIhackathon_WinnerAnnouncement_BlogHeaderImage.png?w=1920&h=527&q=100&fm=webp)
+
+## The 1Password Developer Delight Award
+
+The [1Password hackathon](https://hashnode.com/hackathons/1password) in June was my first major win. The challenge was to build with their developer tools, and I saw an opportunity that seemed obvious in hindsight: PHP developers needed better passwordless authentication options.
+
+I built a complete [PHP SDK for Passage](https://github.com/youneslaaroussi/Passage), 1Password's passwordless authentication service. At the time, there were SDKs for Node.js, Python, and other languages, but nothing for PHP. Given that PHP powers a massive portion of the web, this felt like a gap worth filling.
+
+```php
+use Eludadev\Passage\Passage;
+
+$passage = new Passage(env('APP_ID'), env('API_KEY'));
+$magicLink = $passage->createMagicLink('email@domain.com', '/redirect');
+```
+
+The development process was intense. I had to learn Go to understand how their shell plugins worked, then translate those concepts into idiomatic PHP. I made sure it worked seamlessly with Laravel, Symfony, and other popular frameworks. The SDK needed to feel native, not like a clunky port.
+
+What made this project special was the community feedback. I spent time in the 1Password Slack community, listening to what PHP developers actually needed. That direct connection to users shaped every design decision.
+
+Winning the [Developer Delight award](https://blog.1password.com/2023-1password-hackathon-winners/) validated the approach. The judges appreciated that I wasn't just building something technically impressive; I was solving a real problem for a large community of developers. The SDK is now on [Packagist](https://packagist.org/packages/eludadev/passage) and being used in production applications.
+
+## The Outerbase AI Editor Plugin
+
+A few months later, [Outerbase and Hashnode](https://hashnode.com/hackathons/outerbase) announced their hackathon. [Outerbase](https://outerbase.com/) is a database interface that supports plugins, and I immediately saw potential for AI-powered content editing.
+
+The [AI Editor Column Plugin](https://eludadev.hashnode.dev/unleash-the-power-of-ai-editing-with-the-ai-editor-column-plugin-for-outerbase) lets you run AI queries directly on table cells. Need to fix grammar? Want to translate content? Need to condense a long text? Just select a cell and let the AI handle it. I built it using Meta's LlaMa model with a CORS-compatible API.
+
+<iframe src="https://player.vimeo.com/video/869928145?badge=0&autopause=0&player_id=0&app_id=58479" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="AI Editor Plugin Demo"></iframe>
+
+This project was different because it focused on workflow optimization. I've spent countless hours cleaning up data in spreadsheets and databases, and I wanted to eliminate that friction for others.
+
+The development happened incredibly fast thanks to the [Outerbase Editor](https://eludadev.hashnode.dev/outerbase-editor-unleash-your-plugin-superpowers) tool I had built previously. Having real-time preview, auto-generated mock data, and a VS Code-inspired interface meant I could iterate quickly. What might have taken weeks took days.
+
+Winning as a [runner-up](https://townhall.hashnode.com/outerbase-x-hashnode-winners) in the best plugins category felt great, but the real satisfaction came from seeing other developers use it immediately. The plugin solved such an obvious pain point that adoption was instant.
+
+## The Google and Square First Place
+
+The [Google and Square hackathon](https://developer.squareup.com/blog/announcing-winners-of-the-square-google-ai-hackathon/) was the biggest challenge yet. [SquareSense](https://devpost.com/software/squaresense-ai-personalized-ecommerce-intelligence) combined Square's e-commerce APIs with Google's Vertex AI to create an intelligent business analytics platform.
+
+I've already written about this one in detail in [Winning First Place at the 2023 Google and Square AI Hackathon](/blog/winning-first-place-at-the-2023-google-and-square-ai-hackathon), but what made it different from the other hackathons was the scale. This wasn't just a developer tool; it was a complete product that business owners could actually use to run their stores better.
+
+The AI chat feature, the generative charts, the psychographic analysis, the spoken explanations for accessibility – every feature had to work perfectly together. There was no room for "this is just a hackathon project" excuses.
+
+Winning first place overall, competing against hundreds of teams, was surreal. It represented months of work, countless late nights, and a genuine belief that I could build something transformative.
+
+## What Connects Them All
+
+Looking at these three wins, I see a pattern. Each project solved a real problem I had experienced myself. The PHP SDK came from struggling with authentication in my own projects. The AI Editor came from hours wasted on data cleanup. SquareSense came from seeing friends struggle to understand their business data.
+
+I also learned that hackathons aren't really about the prizes. Don't get me wrong, winning is incredible. But the real value is in pushing yourself to build something complete, learning new technologies under pressure, and getting validation from both judges and users.
+
+## The Learning Curve
+
+Each hackathon taught me different technical skills. From 1Password, I learned about authentication systems and SDK design. From Outerbase, I got hands-on with AI APIs and plugin architectures. From Google and Square, I mastered real-time data processing and AI fine-tuning.
+
+But the soft skills mattered just as much. I learned to scope projects realistically, to communicate ideas clearly in demo videos, to write documentation that actually helps people, and to stay motivated when debugging at 2 AM.
+
+## Advice for Hackathon Participants
+
+If you're considering entering a hackathon, here's what I've learned:
+
+Start with a problem you genuinely care about solving. Judges can tell when you're passionate versus when you're just chasing a prize. Build something you'd want to use yourself.
+
+Don't try to build everything. Pick a core feature set that demonstrates your idea and execute it well. A polished MVP beats a half-finished feature-rich project every time.
+
+Documentation matters as much as code. Your README, demo video, and article are how judges understand your work. Invest time in making them clear and compelling.
+
+Engage with the community. Join the Discord, ask questions, help others. Some of my best ideas came from casual conversations with other participants.
+
+Learn in public. Even if you don't win, sharing your process and lessons learned builds your reputation and helps others.
+
+## Moving Forward
+
+These three wins in one year changed my trajectory as a developer. They opened doors to opportunities, connected me with amazing people in the tech community, and proved that I could compete at a high level.
+
+But more importantly, they taught me that the best way to learn is by building. Each hackathon forced me to master new technologies, solve hard problems, and deliver results under pressure. That's irreplaceable experience.
+
+I'm not done with hackathons. There are more problems to solve, more technologies to learn, more ideas to bring to life. The wins are nice, but the real prize is becoming a better builder with every project.
+
+If you're on the fence about joining a hackathon, just do it. Pick something that excites you, commit fully, and see what you're capable of. You might surprise yourself.
