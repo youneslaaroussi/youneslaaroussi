@@ -13,6 +13,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://youneslaaroussi.ca'),
   title: 'Younes Laaroussi',
   description:
     'Computer Science student passionate about front-end development and cybersecurity. I build user-friendly web interfaces using React.js, Python and JavaScript.',
