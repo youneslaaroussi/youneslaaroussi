@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import { init } from '@plausible-analytics/tracker'
 
 interface PlausibleProviderProps {
   children: React.ReactNode
@@ -9,18 +8,20 @@ interface PlausibleProviderProps {
 
 export function PlausibleProvider({ children }: PlausibleProviderProps) {
   useEffect(() => {
-    // Only initialize on client side
-    if (typeof window !== 'undefined') {
-      init({
-        domain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'localhost',
-        autoCapturePageviews: true,
-        hashBasedRouting: false,
-        outboundLinks: true,
-        fileDownloads: true,
-        formSubmissions: true,
-        captureOnLocalhost: process.env.NODE_ENV === 'development',
-        logging: process.env.NODE_ENV === 'development',
-        bindToWindow: true,
+    // Dynamically import and initialize only on client side
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      import('@plausible-analytics/tracker').then(({ init }) => {
+        init({
+          domain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'localhost',
+          autoCapturePageviews: true,
+          hashBasedRouting: false,
+          outboundLinks: true,
+          fileDownloads: true,
+          formSubmissions: true,
+          captureOnLocalhost: process.env.NODE_ENV === 'development',
+          logging: process.env.NODE_ENV === 'development',
+          bindToWindow: true,
+        })
       })
     }
   }, [])
