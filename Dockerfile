@@ -26,8 +26,15 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
-# Create nextjs user
-RUN adduser --system --uid 1001 nextjs
+# Create nextjs user (Bun base image doesn't provide adduser/groupadd)
+RUN set -eux; \
+    uid=1001 gid=1001; \
+    if ! grep -q '^nextjs:' /etc/passwd; then \
+        printf 'nextjs:x:%s:%s:Next.js user:/app:/bin/sh\n' "$uid" "$gid" >> /etc/passwd; \
+    fi; \
+    if ! grep -q '^nextjs:' /etc/group; then \
+        printf 'nextjs:x:%s:\n' "$gid" >> /etc/group; \
+    fi
 
 # Copy the built application
 COPY --from=builder --chown=nextjs:nextjs /app/.next ./.next
